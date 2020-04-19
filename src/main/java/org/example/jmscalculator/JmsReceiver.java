@@ -31,7 +31,7 @@ public class JmsReceiver {
     @JmsListener(destination = "org.example.jms-calculator.request")
     public void receiveMessage(String body, @Header(JmsHeaders.CORRELATION_ID) String jmsCorrelationId) {
         Object response;
-        LOGGER.info("JmsReceiver received message = '{}'", message);
+        LOGGER.info("JmsReceiver received message = '{}'", body);
         try {
             CalculatorRequest calculatorRequest = objectMapper.readValue(body, CalculatorRequest.class);
             response = calculatorService.calculate(calculatorRequest);
