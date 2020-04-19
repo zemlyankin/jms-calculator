@@ -52,9 +52,9 @@ public class StepsDefinition {
     public void getting_sum(String arg1) {
         assertThat(result).isEqualTo(strToInt(arg1));
     }
-    public Integer strToInt (String str){
+    public Integer strToInt (String str) {
         Integer result;
-        switch(str){
+        switch (str) {
             case "null":
                 result = null;
                 break;
@@ -69,6 +69,5 @@ public class StepsDefinition {
         }
         return result;
     }
-
 
 }
