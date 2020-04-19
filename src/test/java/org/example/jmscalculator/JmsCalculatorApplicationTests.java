@@ -9,5 +9,4 @@ class JmsCalculatorApplicationTests {
 	@Test
 	void contextLoads() {
 	}
-
 }
