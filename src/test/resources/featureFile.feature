@@ -18,6 +18,8 @@ Feature: operation ADD
       | MAX_VALUE |   0   |  MAX_VALUE  |
       | MIN_VALUE |   -1   |  MAX_VALUE  |
       |  3    |       |    3   |
+
+
    #negative
       |  a    |   b   |  null  |
       | null  |   0   |  null  |
